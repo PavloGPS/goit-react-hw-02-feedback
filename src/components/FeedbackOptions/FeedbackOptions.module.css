@@ -1,0 +1,81 @@
+.FeedbackOptions {
+  display: flex;
+  gap: 10px;
+  /* justify-content: center; */
+}
+.feedbackBtn {
+  border-radius: 100px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  text-transform: capitalize;
+}
+.feedbackBtn:hover {
+  transform: scale(1.05) rotate(-1deg);
+}
+.goodBtn {
+  composes: feedbackBtn;
+  background-color: rgb(194, 251, 215);
+  box-shadow: rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
+    rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px,
+    rgba(44, 187, 99, 0.15) 0 16px 32px;
+  color: green;
+}
+/* .neutralBtn {
+  composes: feedbackBtn;
+  background-color: rgb(194, 215, 251);
+  box-shadow: rgba(44, 99, 187, 0.2) 0 -25px 18px -14px inset,
+    rgba(44, 99, 187, 0.15) 0 1px 2px, rgba(44, 99, 187, 0.15) 0 2px 4px,
+    rgba(44, 99, 187, 0.15) 0 4px 8px, rgba(44, 99, 187, 0.15) 0 8px 16px,
+    rgba(44, 99, 187, 0.15) 0 16px 32px;
+  color: blue;
+} */
+.neutralBtn {
+  composes: feedbackBtn;
+  background-color: rgb(251, 255, 194);
+  box-shadow: rgba(99, 187, 44, 0.2) 0 -25px 18px -14px inset,
+    rgba(99, 187, 44, 0.15) 0 1px 2px, rgba(99, 187, 44, 0.15) 0 2px 4px,
+    rgba(99, 187, 44, 0.15) 0 4px 8px, rgba(99, 187, 44, 0.15) 0 8px 16px,
+    rgba(99, 187, 44, 0.15) 0 16px 32px;
+  color: rgb(128, 85, 6);
+}
+
+.badBtn {
+  composes: feedbackBtn;
+  background-color: rgb(251, 194, 215);
+  box-shadow: rgba(187, 44, 99, 0.2) 0 -25px 18px -14px inset,
+    rgba(187, 44, 99, 0.15) 0 1px 2px, rgba(187, 44, 99, 0.15) 0 2px 4px,
+    rgba(187, 44, 99, 0.15) 0 4px 8px, rgba(187, 44, 99, 0.15) 0 8px 16px,
+    rgba(187, 44, 99, 0.15) 0 16px 32px;
+  color: red;
+}
+
+.goodBtn:hover {
+  box-shadow: rgba(44, 187, 99, 0.35) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.25) 0 1px 2px, rgba(44, 187, 99, 0.25) 0 2px 4px,
+    rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(44, 187, 99, 0.25) 0 8px 16px,
+    rgba(44, 187, 99, 0.25) 0 16px 32px;
+}
+
+.neutralBtn:hover {
+  box-shadow: rgba(99, 187, 44, 0.35) 0 -25px 18px -14px inset,
+    rgba(99, 187, 44, 0.25) 0 1px 2px, rgba(99, 187, 44, 0.25) 0 2px 4px,
+    rgba(99, 187, 44, 0.25) 0 4px 8px, rgba(99, 187, 44, 0.25) 0 8px 16px,
+    rgba(99, 187, 44, 0.25) 0 16px 32px;
+}
+
+.badBtn:hover {
+  box-shadow: rgba(187, 44, 99, 0.35) 0 -25px 18px -14px inset,
+    rgba(187, 44, 99, 0.25) 0 1px 2px, rgba(187, 44, 99, 0.25) 0 2px 4px,
+    rgba(187, 44, 99, 0.25) 0 4px 8px, rgba(187, 44, 99, 0.25) 0 8px 16px,
+    rgba(187, 44, 99, 0.25) 0 16px 32px;
+}
