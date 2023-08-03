@@ -55,43 +55,6 @@ export class App extends Component {
             <Notification message="There is no feedback"></Notification>
           )}
         </Section>
-
-        {/* <div className="feedbackOptionsSection">
-          <h2 className="sectionTitle">Please leave feedback</h2>
-          <button
-            key="good"
-            className="goodBtn"
-            onClick={() => this.onLeaveFeedback('good')}
-          >
-            Good
-          </button>
-          <button
-            key="neutral"
-            className="neutralBtn"
-            onClick={() => this.onLeaveFeedback('neutral')}
-          >
-            Neutral
-          </button>
-          <button
-            key="bad"
-            className="badBtn"
-            onClick={() => this.onLeaveFeedback('bad')}
-          >
-            Bad
-          </button>
-        </div>
-        <div className="statisticsSection">
-          <h2 className="sectionTitle">Statistics</h2>
-          <p className="statistics__item">Good: {good}</p>
-          <p className="statistics__item">Neutral: {neutral}</p>
-          <p className="statistics__item">Bad: {bad}</p>
-          <p className="statistics__item">
-            Total: {this.calculateTotalFeedback()}
-          </p>
-          <p className="statistics__item">
-            Positive Feedback: {this.calculatePositivePercentage()}%
-          </p>
-        </div> */}
       </>
     );
   }
